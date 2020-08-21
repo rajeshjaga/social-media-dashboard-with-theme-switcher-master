@@ -1,0 +1,3 @@
+.DS_Store
+design/*.jpg
+!design/desktop-preview.jpg
