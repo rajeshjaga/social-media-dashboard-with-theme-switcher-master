@@ -1,0 +1,20 @@
+$breakdown-points: (
+  "small": "43.0625rem",
+  "medium": "74.9375rem",
+  "large": "87.4375rem",
+);
+$breakup-points: (
+  "medium": "43.125rem",
+  "large": "75rem",
+  "xlarge": "87.5rem",
+);
+@mixin breakUp($size) {
+  @media (min-width: map-get($breakup-points, $size )) {
+    @content;
+  }
+}
+@mixin breakDown($size) {
+  @media (max-width: map-get($breakdown-points, $size )) {
+    @content;
+  }
+}

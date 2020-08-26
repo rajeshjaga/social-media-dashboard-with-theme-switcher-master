@@ -1,0 +1,28 @@
+//dark mode
+$VeryDarkBlueBG: hsl(230, 17%, 14%);
+$VeryDarkBlueTopBGPattern: hsl(232, 19%, 15%);
+$DarkDesaturatedBlueCardBG: hsl(228, 28%, 20%);
+$DesaturatedBlueText: hsl(228, 34%, 66%);
+$WhiteText: hsl(0, 0%, 100%);
+
+//normal mode
+$WhiteBG: hsl(0, 0%, 100%);
+$VeryPaleBlueTopBGPattern: hsl(225, 100%, 98%);
+$LightGrayishBlueCardBG: hsl(227, 47%, 96%);
+$DarkGrayishBlueText: hsl(228, 12%, 44%);
+$VeryDarkBlueText: hsl(230, 17%, 14%);
+$switchGrey: hsl(232, 15, 82);
+$backgroundWhite: hsl(220, 4, 98);
+//gradient background
+$lightToggle: hsl(230, 22%, 74%);
+$buttonGradient: linear-gradient(-90deg, #3eda82 0%, #378fe6 100%);
+
+//primary Colors
+$LimeGreen: hsl(163, 72%, 41%);
+$BrightRed: hsl(356, 69%, 56%);
+
+//social-links
+$Facebook: hsl(208, 92%, 53%);
+$Twitter: hsl(203, 89%, 53%);
+$Instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$YouTube: hsl(348, 97%, 39%);

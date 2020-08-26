@@ -1,0 +1,35 @@
+@use 'variables';
+.switch {
+  width: auto;
+  input[type="checkbox"] {
+    display: none;
+  }
+  h4 {
+    margin-right: 0.875rem;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    padding: 0.78125rem 1.5rem;
+    background: variables.$switchGrey;
+    border-radius: 3.125rem;
+  }
+  .pointer {
+    position: absolute;
+    top: 0.2185rem;
+    left: 0.2rem;
+    height: 1.1875rem;
+    width: 1.1875rem;
+    border-radius: 3.125rem;
+    background-color: variables.$backgroundWhite;
+    transition: all 0.3s ease-out;
+    transform: translateX(1.4375rem);
+  }
+  input[type="checkbox"]:checked + label .pointer {
+    transform: translateX(0rem);
+  }
+  input[type="checkbox"]:checked + label {
+    background-image: variables.$buttonGradient;
+  }
+}

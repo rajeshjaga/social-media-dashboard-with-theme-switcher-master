@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <nav>
+      <div class="before"></div>
+      <div class="container flex flex-ai-c flex-jc-sb">
+        <div class="heading">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="switch flex flex-ai-c">
+          <h4>Dark Mode</h4>
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox">
+            <div class="pointer"></div>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="card-container">
+        <div class="large-card-container">
+          <div class="large-cards facebook">
+            <p><img src="images/icon-facebook.svg" alt="fb" /> @nathanf</p>
+            <h1>
+              1987
+              <span>Followers</span>
+            </h1>
+            <p class="green-p">
+              <img src="images/icon-up.svg" alt="up" /> 12 Today
+            </p>
+          </div>
+          <div class="large-cards twitter">
+            <p><img src="images/icon-twitter.svg" alt="tweet" /> @nathanf</p>
+            <h1>
+              1044
+              <span>Followers</span>
+            </h1>
+            <p class="green-p">
+              <img src="images/icon-up.svg" alt="up" /> 99 Today
+            </p>
+          </div>
+          <div class="large-cards instagram">
+            <p>
+              <img src="images/icon-instagram.svg" alt="insta" /> @realnathanf
+            </p>
+            <h1>
+              11k
+              <span>Followers</span>
+            </h1>
+            <p class="green-p">
+              <img src="images/icon-up.svg" alt="up" />1099 Today
+            </p>
+          </div>
+          <div class="large-cards youtube">
+            <p><img src="images/icon-youtube.svg" alt="yt" />Nathan F.</p>
+            <h1>
+              8239
+              <span>Subscribers</span>
+            </h1>
+            <p class="red-p">
+              <img src="images/icon-down.svg" alt="up" />144 Today
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
 
   Nathan F.
   8239
@@ -79,9 +123,8 @@
   1407
   12%
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="app/script/app.js"></script>
+  </body>
 </html>

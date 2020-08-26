@@ -1,0 +1,67 @@
+@use 'media';
+@use 'variables';
+@use 'helper';
+.large-card-container {
+  width: 100%;
+  padding: 0 9.6875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  @include media.breakDown(medium) {
+    padding: 0 0.5625rem;
+  }
+  .large-cards {
+    position: relative;
+    height: 13rem;
+    width: 15.0625rem;
+    padding: 1.75rem 0;
+    background-color: variables.$LightGrayishBlueCardBG;
+    text-align: center;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    &:before {
+      content: "";
+      height: 0.375rem;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @include media.breakDown(medium) {
+      width: 100%;
+    }
+    &.facebook:before {
+      background-color: variables.$Facebook;
+    }
+    &.twitter:before {
+      background-color: variables.$Twitter;
+    }
+    &.instagram:before {
+      background-image: variables.$Instagram;
+    }
+    &.youtube:before {
+      background-color: variables.$YouTube;
+    }
+    h1 {
+      margin: 1.75rem 0;
+      font-size: 2.625rem;
+      span {
+        display: block;
+        font-size: 0.6875rem;
+        color: variables.$DarkGrayishBlueText;
+        letter-spacing: 0.25rem;
+      }
+    }
+    P {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: 0 auto;
+      img {
+        display: inline-block;
+        padding-right: 0.125rem;
+      }
+    }
+  }
+}
