@@ -3,7 +3,6 @@
 nav {
   width: 100%;
   position: relative;
-
   .container {
     flex-wrap: wrap;
     padding: 2.5625rem 9.6875rem;
@@ -13,7 +12,7 @@ nav {
     @include media.breakDown(medium) {
       padding: 2.5625rem 1.5625rem;
       .heading {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
       .switch {
         position: relative;
@@ -22,10 +21,10 @@ nav {
         &:before {
           content: "";
           position: absolute;
-          height: 1px;
+          height: 0.0625rem;
           width: 100%;
           background-color: variables.$VeryDarkBlueText;
-          margin-top: -40px;
+          margin-top: -2.5rem;
         }
       }
     }
@@ -37,8 +36,8 @@ nav {
     top: 0;
     left: 0;
     background-color: variables.$VeryPaleBlueTopBGPattern;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0.9375rem;
+    border-bottom-left-radius: 0.9375rem;
     z-index: -1;
   }
 }
