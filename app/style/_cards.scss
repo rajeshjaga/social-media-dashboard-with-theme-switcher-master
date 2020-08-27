@@ -4,14 +4,12 @@
 .large-card-container {
   width: 100%;
   padding: 0 9.6875rem;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   @include media.breakDown(medium) {
-    padding: 0 0.5625rem;
+    padding: 0 1.5625rem;
   }
   .large-cards {
+    transition: all 0.3s ease-in-out;
     position: relative;
     height: 13rem;
     width: 15.0625rem;
@@ -20,6 +18,7 @@
     text-align: center;
     border-radius: 0.625rem;
     overflow: hidden;
+    cursor: pointer;
     &:before {
       content: "";
       height: 0.375rem;
@@ -30,6 +29,7 @@
     }
     @include media.breakDown(medium) {
       width: 100%;
+      margin-bottom: 1.4375rem;
     }
     &.facebook:before {
       background-color: variables.$Facebook;
@@ -59,8 +59,57 @@
       width: fit-content;
       margin: 0 auto;
       img {
-        display: inline-block;
         padding-right: 0.125rem;
+      }
+    }
+  }
+}
+.medium-cards-container {
+  width: 100%;
+  padding: 0 9.6875rem;
+  flex-wrap: wrap;
+  @include media.breakDown(medium) {
+    padding: 0 24px;
+    .medium-cards {
+      min-width: 100%;
+      min-height: 7.9375rem;
+    }
+  }
+  .medium-cards {
+    transition: all 0.3s ease-in-out;
+    height: 7.4375rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$LightGrayishBlueCardBG;
+    margin-bottom: 23px;
+    padding: 24px 30px;
+    border-radius: 0.625rem;
+    cursor: pointer;
+
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        font-size: 1.5625rem;
+      }
+      P {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        img {
+          padding-right: 0.125rem;
+        }
       }
     }
   }
